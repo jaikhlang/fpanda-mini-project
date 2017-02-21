@@ -15,3 +15,5 @@ Route::get('/',['uses' => 'PageController@index', 'as' => 'home']);
 
 //Backend Section
 Route::get('admin',['uses' => 'DashboardController@index', 'as' => 'admin']);
+Route::resource('locations', 'LocationController');
+Route::resource('restaurants', 'RestaurantController');
